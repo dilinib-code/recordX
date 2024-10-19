@@ -1,0 +1,47 @@
+@page "/add-transaction"
+@inject HttpClient HttpClient
+
+<h3>Add New Transaction</h3>
+<EditForm Model="newTransaction" OnValidSubmit="HandleValidSubmit">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <div>
+        <label>Customer NIC:</label>
+        <InputText @bind-Value="newTransaction.CustomerNIC" class="form-control" />
+    </div>
+
+    <div>
+        <label>Amount:</label>
+        <InputNumber @bind-Value="newTransaction.Amount" class="form-control" />
+    </div>
+
+    <div>
+        <label>Date:</label>
+        <InputDate @bind-Value="newTransaction.DateTime" class="form-control" />
+    </div>
+
+    <div>
+        <label>Paid:</label>
+        <InputCheckbox @bind-Value="newTransaction.Paid" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</EditForm>
+
+@code {
+    private Transaction newTransaction = new Transaction();
+
+    private async Task HandleValidSubmit()
+    {
+        var response = await HttpClient.PostAsJsonAsync("api/transaction", newTransaction);
+        if (response.IsSuccessStatusCode)
+        {
+            // Handle success (e.g., show a success message or redirect)
+        }
+        else
+        {
+            // Handle error (e.g., show an error message)
+        }
+    }
+}

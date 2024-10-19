@@ -1,0 +1,49 @@
+@page "/add-customer"
+@inject HttpClient HttpClient
+
+<h3>Add New Customer</h3>
+<EditForm Model="newCustomer" OnValidSubmit="HandleValidSubmit">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <div>
+        <label>Name:</label>
+        <InputText @bind-Value="newCustomer.Name" class="form-control" />
+    </div>
+
+    <div>
+        <label>NIC:</label>
+        <InputText @bind-Value="newCustomer.NIC" class="form-control" />
+    </div>
+
+    <div>
+        <label>Location:</label>
+        <InputText @bind-Value="newCustomer.Location" class="form-control" />
+    </div>
+
+    <div>
+        <label>Job:</label>
+        <InputText @bind-Value="newCustomer.Job" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</EditForm>
+
+
+@code {
+
+    private Customer newCustomer = new Customer();
+
+    private async Task HandleValidSubmit()
+    {
+        var response = await HttpClient.PostAsJsonAsync("api/customer", newCustomer);
+        if (response.IsSuccessStatusCode)
+        {
+            // Handle success (e.g., show a success message or redirect)
+        }
+        else
+        {
+            // Handle error (e.g., show an error message)
+        }
+    }
+}

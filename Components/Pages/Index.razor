@@ -1,0 +1,35 @@
+@page "/"
+@inject IHttpClientFactory ClientFactory
+
+<h1>Dashboard</h1>
+<div class="dashboard">
+    <div class="card">
+        <h3>Total Customers</h3>
+        <p>@totalCustomers</p>
+    </div>
+    <div class="card">
+        <h3>Total Transactions</h3>
+        <p>@totalTransactions</p>
+    </div>
+    <div class="card">
+        <h3>Total Amount</h3>
+        <p>@totalAmount</p>
+    </div>
+</div>
+
+@code {
+    private int totalCustomers;
+    private int totalTransactions;
+    private double totalAmount;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var client = ClientFactory.CreateClient("recordXAPI");
+        var customers = await client.GetFromJsonAsync<List<Customer>>("api/customer");
+        totalCustomers = customers?.Count ?? 0;
+
+        var transactions = await client.GetFromJsonAsync<List<Transaction>>("api/transaction");
+        totalTransactions = transactions?.Count ?? 0;
+        totalAmount = transactions?.Sum(t => t.Amount) ?? 0;
+    }
+}

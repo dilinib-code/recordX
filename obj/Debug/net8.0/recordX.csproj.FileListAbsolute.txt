@@ -7,10 +7,17 @@
 /Users/dilinibandara/Desktop/DotNet/recordX/bin/Debug/net8.0/recordX.dll
 /Users/dilinibandara/Desktop/DotNet/recordX/bin/Debug/net8.0/recordX.pdb
 /Users/dilinibandara/Desktop/DotNet/recordX/bin/Debug/net8.0/DnsClient.dll
+/Users/dilinibandara/Desktop/DotNet/recordX/bin/Debug/net8.0/Microsoft.AspNetCore.JsonPatch.dll
+/Users/dilinibandara/Desktop/DotNet/recordX/bin/Debug/net8.0/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+/Users/dilinibandara/Desktop/DotNet/recordX/bin/Debug/net8.0/Microsoft.DotNet.PlatformAbstractions.dll
+/Users/dilinibandara/Desktop/DotNet/recordX/bin/Debug/net8.0/Microsoft.Extensions.DependencyModel.dll
 /Users/dilinibandara/Desktop/DotNet/recordX/bin/Debug/net8.0/MongoDB.Bson.dll
 /Users/dilinibandara/Desktop/DotNet/recordX/bin/Debug/net8.0/MongoDB.Driver.dll
+/Users/dilinibandara/Desktop/DotNet/recordX/bin/Debug/net8.0/Newtonsoft.Json.dll
+/Users/dilinibandara/Desktop/DotNet/recordX/bin/Debug/net8.0/Newtonsoft.Json.Bson.dll
 /Users/dilinibandara/Desktop/DotNet/recordX/bin/Debug/net8.0/SharpCompress.dll
 /Users/dilinibandara/Desktop/DotNet/recordX/bin/Debug/net8.0/Snappier.dll
+/Users/dilinibandara/Desktop/DotNet/recordX/bin/Debug/net8.0/System.Net.Http.Json.dll
 /Users/dilinibandara/Desktop/DotNet/recordX/bin/Debug/net8.0/ZstdSharp.dll
 /Users/dilinibandara/Desktop/DotNet/recordX/obj/Debug/net8.0/recordX.csproj.AssemblyReference.cache
 /Users/dilinibandara/Desktop/DotNet/recordX/obj/Debug/net8.0/recordX.GeneratedMSBuildEditorConfig.editorconfig
@@ -18,6 +25,7 @@
 /Users/dilinibandara/Desktop/DotNet/recordX/obj/Debug/net8.0/recordX.AssemblyInfo.cs
 /Users/dilinibandara/Desktop/DotNet/recordX/obj/Debug/net8.0/recordX.csproj.CoreCompileInputs.cache
 /Users/dilinibandara/Desktop/DotNet/recordX/obj/Debug/net8.0/recordX.MvcApplicationPartsAssemblyInfo.cache
+/Users/dilinibandara/Desktop/DotNet/recordX/obj/Debug/net8.0/recordX.sourcelink.json
 /Users/dilinibandara/Desktop/DotNet/recordX/obj/Debug/net8.0/staticwebassets.build.json
 /Users/dilinibandara/Desktop/DotNet/recordX/obj/Debug/net8.0/staticwebassets.development.json
 /Users/dilinibandara/Desktop/DotNet/recordX/obj/Debug/net8.0/staticwebassets/msbuild.recordX.Microsoft.AspNetCore.StaticWebAssets.props
