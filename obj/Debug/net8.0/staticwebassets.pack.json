@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/dilinibandara/Desktop/DotNet/recordX/obj/Debug/net8.0/scopedcss/projectbundle/recordX.bundle.scp.css",
+      "PackagePath": "staticwebassets/recordX.bundle.scp.css"
+    },
+    {
+      "Id": "/Users/dilinibandara/Desktop/DotNet/recordX/wwwroot/app.css",
+      "PackagePath": "staticwebassets/app.css"
+    },
+    {
+      "Id": "/Users/dilinibandara/Desktop/DotNet/recordX/wwwroot/bootstrap/bootstrap.min.css",
+      "PackagePath": "staticwebassets/bootstrap/bootstrap.min.css"
+    },
+    {
+      "Id": "/Users/dilinibandara/Desktop/DotNet/recordX/wwwroot/bootstrap/bootstrap.min.css.map",
+      "PackagePath": "staticwebassets/bootstrap/bootstrap.min.css.map"
+    },
+    {
+      "Id": "/Users/dilinibandara/Desktop/DotNet/recordX/wwwroot/favicon.png",
+      "PackagePath": "staticwebassets/favicon.png"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.recordX.props",
+      "PackagePath": "build\\recordX.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.recordX.props",
+      "PackagePath": "buildMultiTargeting\\recordX.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.recordX.props",
+      "PackagePath": "buildTransitive\\recordX.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.recordX.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
